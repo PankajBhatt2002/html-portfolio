@@ -1,0 +1,25 @@
+button{
+    font-weight: bold;
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.5rem;
+}
+.input{
+    width: 20rem;
+    height: 4rem;
+    font-size: 2rem;
+}
+.row{
+    margin: 4px;
+}
+.zero{
+    width: 10rem;
+}
+.h2-size{
+    font-size: 2.7rem;
+    text-decoration: underline;
+}
+::placeholder{
+    font-size: 30px;
+    font-weight: lighter;
+}

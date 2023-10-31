@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Programming World</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('bck.jpg');
+            background-size: cover;
+        }
+
+        header {
+            margin: 10px 0px;
+
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            text-align: center;
+            margin: 0px 0px;
+            padding: 5px 5px;
+            border-radius: 20px;
+            background-color: whitesmoke;
+            background-color: black;
+        }
+
+        .left img {
+            width: 65px;
+            border-radius: 30px;
+            /* margin: 0px 5px; */
+        }
+
+        .left div {
+            line-height: 19px;
+            font-size: 20px;
+            color: whitesmoke;
+            /* padding: -7px; */
+
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            border: 3px solid rgb(79 6 103);
+            border-radius: 20px;
+            background-color: #a8b4b7;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 34px 23px;
+            color: rgb(53, 4, 69);
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(140, 106, 106);
+        }
+
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .btn {
+            cursor: pointer;
+            width: 90px;
+            height: 33px;
+            margin: 5px 5px;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+
+        .btn:hover {
+            background-color: rgb(190, 243, 190);
+        }
+
+        .container {
+            position: absolute;
+            right: 35px;
+            top: 130px;
+            text-align: center;
+            border: 3px solid black;
+            margin: 20px 10px;
+            width: 34%;
+        }
+
+        .EntryForm input {
+            /* display: block; */
+            width: 90%;
+            margin: 7px 0px;
+            padding: 15px 0px;
+            font-size: 25px;
+            text-align: center;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+
+        }
+
+        .EntryForm input:hover{
+            background-color: rgb(53, 50, 50);
+        }
+
+        .container h1 {
+            color: white;
+            text-decoration: underline;
+            font-size: 33px;
+            background-color: black;
+            width: 98%;
+            height: 53px;
+            border-radius: 20px;
+            margin:6px auto;
+        }
+
+        .submitBtn {
+            width: 45%;
+            margin: 14px 0px;
+            padding: 15px 0px;
+            font-size: 25px;
+            text-align: center;
+            border-radius: 20px;
+            background-color: #8fdb89;
+        }
+
+        .submitBtn:hover {
+            background-color: #11a1079c;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- left -->
+        <div class="left">
+            <img src="logo.jpg" alt="logo">
+            <div>Programming World</div>
+        </div>
+        <!-- mid -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Placements</a></li>
+                <li><a href="#">Faclties</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </div>
+        <!-- right -->
+        <div class="right">
+            <button class="btn">Contact us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Intrested students can fill the form</h1>
+        <form action="beckend.php">
+            <div class="EntryForm">
+                <input type="text" name="myName" placeholder="Enter your Name">
+            </div>
+            <div class="EntryForm">
+                <input type="text" name="myEducation" placeholder="Education">
+            </div>
+            <div class="EntryForm">
+                <input type="text" name="age" placeholder="Enter your Age">
+            </div>
+            <div class="EntryForm">
+                <input type="text" name="gender" placeholder="Enter your Gender">
+            </div>
+            <div class="EntryForm">
+                <input type="text" name="mobileNo" placeholder="Enter your Mobile Number">
+            </div>
+            <div class="EntryForm">
+                <input type="text" name="EmailId" placeholder="Enter your Email Id">
+            </div>
+            <button class="submitBtn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
